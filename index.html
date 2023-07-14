@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e08b403aab.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>&#128195; To Do</title>
+  </head>
+
+  <body>
+    <main>
+      <section id="headline">
+        <h1>
+          <i
+            class="fa-regular fa-square-check fa-xl"
+            style="color: #ffffff"
+          ></i>
+          Tu lista de tareas
+        </h1>
+
+        <div id="counterToDo">
+          <span> Completaste : </span>
+
+          <div class="spaceTxt">
+            <span id="leftToDo"> </span>
+
+            <span>de:</span>
+
+            <span id="totalToDo"> </span>
+          </div>
+        </div>
+      </section>
+
+      <section id="inputToDo">
+        <div>
+          <span>Agregar Tarea: </span>
+          <input
+            type="text"
+            name="newToDo"
+            id="ToDoTitle"
+            placeholder="Comprar pan y vino"
+          />
+          <br />
+          <span> Descripcion: </span>
+          <br />
+          <textarea
+            name="Description"
+            id="whatToDo"
+            cols="50"
+            rows="3"
+            wrap="hard"
+            placeholder="Debo ir al almacen por pan y a la botilleria por el preciado nectar ancestral"
+          ></textarea>
+        </div>
+
+        <button id="addToDo">Agregar tarea</button>
+      </section>
+
+      <section id="theList">
+        <h2>Tus Tareas :</h2>
+        <ul id="ToDo"></ul>
+      </section>
+    </main>
+
+    <script src="assets/js/Scrypt.js"></script>
+  </body>
+</html>

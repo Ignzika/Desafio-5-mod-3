@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&family=Happy+Monkey&family=Open+Sans:wght@300;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Happy Monkey;
+  font-style: oblique;
+}
+* :not(h1, h2, h3) {
+  font-family: "Open Sans", sans-serif;
+}
+
+color {
+  --text: #000000;
+
+  --background: #f4f6fb;
+
+  --primary: #4685ff;
+
+  --secondary: #d0defb;
+
+  --accent: #714e83;
+
+  --border: #f5f111;
+
+  --completed: #45bf8e;
+}
+
+body {
+  background-color: #f4f6fb;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 55.75em;
+}
+
+ul {
+  list-style: none;
+}
+
+#headline {
+  margin: 5% 1%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+h1 {
+  padding: 1% 2%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 31px 12px rgba(0, 0, 0, 0.2);
+  background-color: #4685ff;
+  color: #f4f6fb;
+}
+
+#counterToDo {
+  padding: 1% 2%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 31px 12px rgba(0, 0, 0, 0.2);
+  background-color: #4685ff;
+  color: #f4f6fb;
+  font-size: x-large;
+  font-weight: 600;
+}
+#leftToDo,
+#totalToDo {
+  border-radius: 10px;
+  border: #d0defb solid 2px;
+  padding: 1% 5%;
+}
+
+.spaceTxt {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+#inputToDo {
+  margin: 5% 1%;
+  padding: 2% 0 0 0;
+  box-shadow: 0px 0px 31px 12px rgba(0, 0, 0, 0.2);
+  background-color: #4685ff;
+  border-radius: 5px;
+  color: #f4f6fb;
+  font-size: x-large;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#ToDoTitle {
+  border: #f4f6fb solid 1px;
+  border-radius: 5px;
+  font-size: large;
+}
+
+#whatToDo {
+  padding: 1% 2%;
+  border: #f4f6fb solid 1px;
+  border-radius: 5px;
+  font-size: large;
+  resize: none;
+}
+
+#addToDo {
+  margin: 2%;
+  padding: 2%;
+  width: 50%;
+  font-size: large;
+  font-weight: 600;
+  background-color: #f4f6fb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addToDo:hover {
+  background-color: #714e83;
+  color: #f4f4f4;
+  box-shadow: 0px 0px 31px 12px rgba(0, 0, 0, 0.2);
+}
+
+#addToDo:active {
+  background-color: #672a86;
+  color: #d0defb;
+  box-shadow: 0px 0px 31px 12px rgba(113, 78, 131, 0.564);
+}
+
+#theList {
+  margin: 5% 1%;
+}
+
+.blue {
+    height: 120px;
+  margin: 2% 0;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  gap: 1rem;
+  background-color: #d0defb;
+}
+
+.green {
+    margin: 2% 0;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    gap: 1rem;
+  background-color: #45bf8e;
+}
+
+.clmTxt {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 600;
+  width: 450px;
+}
+
+#liDescription {
+  margin: 0 9% 0 2%;
+  font-size: large;
+}
+
+#bttnToDo {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bttnList {
+  background-color: #4685ff;
+  height: 40%;
+  width: 100%;
+  cursor: pointer;
+  border: #d0defb 5px solid;
+  border-radius: 25px;
+  border: #000000 1px solid;
+  font-size: x-small;
+}
+
+.chckbox {
+    height: 20%;
+    width: 100%;
+  border: #4685ff 3px solid;
+  border-radius: 12px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  font-size: 1.2rem;
+  font-style: oblique;
+  text-align: center;
+  font-weight: 600;
+  padding: 6%;
+  cursor: pointer;
+}
+
+.chckbox:hover {
+  background-color: #4685ff;
+  color: #f4f4f4;
+  border: #f4f4f4 3px solid;
+}
+
+.chckbox:active {
+  background-color: #45bf8e;
+  color: #000000;
+  border: #f4f4f4 3px solid;
+}
